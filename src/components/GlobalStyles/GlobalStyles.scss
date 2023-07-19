@@ -2,6 +2,13 @@
 
 :root {
     --text-color: #161823;
+    --primary-color: #6527be;
+
+    --default-header-search-height: 40px;
+    --default-header-navbar-height: 70px;
+    --default-header-height: 70px;
+    --font-family: 'Helvetica Neue', Helvetica, Arial, '文泉驛正黑', 'WenQuanYi Zen Hei', 'Hiragino Sans GB', '儷黑 Pro',
+        'LiHei Pro', 'Heiti TC', '微軟正黑體', 'Microsoft JhengHei UI', 'Microsoft JhengHei', sans-serif;
 }
 
 * {
@@ -13,6 +20,10 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
 }
 
 button,

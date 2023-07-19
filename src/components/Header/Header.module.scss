@@ -1,0 +1,130 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    width: 91.666667%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 3rem;
+    color: #6527be;
+    font-weight: 700;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+.shop-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #6527be;
+    margin-left: 0.5rem;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+.cart-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #6527be;
+}
+
+.navbar {
+    height: var(--default-header-navbar-height);
+    background-color: #6527be;
+    display: flex;
+}
+
+.custom-width {
+    width: 91.666667%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 5rem;
+    width: 27rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.bars-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 1rem;
+}
+
+.cat-title {
+    font-weight: 500;
+    color: black;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.arrow-down-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.pages-link {
+    display: flex;
+    align-items: center;
+    .section {
+        display: flex;
+        a {
+            font-weight: 500;
+            color: white;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            cursor: pointer;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    .login {
+        a {
+            font-weight: 500;
+            color: white;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            cursor: pointer;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.user-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+}

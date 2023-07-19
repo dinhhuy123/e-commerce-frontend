@@ -1,0 +1,126 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sign-up-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.container {
+    padding: 0;
+    max-width: 44rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner {
+    padding: 3.2rem 4rem;
+}
+
+.email-container {
+    margin-top: 2.4rem;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #374151;
+    line-height: 2rem;
+}
+
+.input-container {
+    margin-top: 0.4rem;
+}
+
+.input-box {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.6rem;
+    box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 1.2rem;
+}
+
+.password-container {
+    margin-top: 2.4rem;
+    position: relative;
+}
+
+.show-password-icon {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 1.2rem;
+    top: 3.3rem;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 1.4rem;
+        color: #374151;
+    }
+}
+
+.checkbox {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.8rem;
+}
+
+.forgot-password {
+    a {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #9681eb;
+    }
+}
+
+.button-container {
+    margin-top: 2.4rem;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.6rem;
+}
+
+.sign-up-link {
+    margin-top: 2.4rem;
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 1.4rem;
+        color: #374151;
+    }
+    .link {
+        font-size: 1.4rem;
+        color: #9681eb;
+        font-weight: 500;
+        padding-left: 0.8rem;
+    }
+}
