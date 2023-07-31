@@ -66,6 +66,13 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 2.4rem;
+    .forgot-password {
+        a {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #9681eb;
+        }
+    }
 }
 
 .remember {
@@ -81,14 +88,6 @@
     width: 1.6rem;
     height: 1.6rem;
     margin-right: 0.8rem;
-}
-
-.forgot-password {
-    a {
-        font-size: 1.4rem;
-        font-weight: 500;
-        color: #9681eb;
-    }
 }
 
 .button-container {

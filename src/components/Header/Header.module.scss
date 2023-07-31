@@ -108,23 +108,94 @@
     }
 }
 
-.user {
+.user-container {
     display: flex;
     align-items: center;
+}
+
+.image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-weight: 500;
+    color: white;
+    padding-left: 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    min-width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
     .login {
         a {
             font-weight: 500;
-            color: white;
+            color: #6527be;
             padding-left: 1.5rem;
             padding-right: 1.5rem;
-            cursor: pointer;
             font-size: 1.6rem;
         }
     }
+    &:hover {
+        opacity: 0.9;
+    }
 }
 
-.user-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    color: white;
+// tippy css
+.user-extension {
+    width: 18rem;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    box-shadow: rgb(0 0 0 / 12%) 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(255, 255, 255);
+    top: -8px;
+    left: 18px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 1.6rem;
+    cursor: pointer;
+    min-width: 100px;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.separate {
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.item-title {
+    font-size: 1.6rem;
+    margin-left: 0.8rem;
 }

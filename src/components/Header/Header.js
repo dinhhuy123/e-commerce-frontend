@@ -2,12 +2,35 @@ import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import Search from '~/components/Search';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStarOfLife, faCartShopping, faUser, faBars, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faStarOfLife, faCartShopping, faBars, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import Image from '~/components/Image';
+import HeadlessTippy from '@tippyjs/react/headless';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
+import { CartIcon, LogoutIcon, ViewProfileIcon } from '~/components/Icons';
 
 const cx = classNames.bind(styles);
 
 function Header() {
+    const { isAuth, currentUser } = useSelector((state) => state.auth);
+
+    const USER_MENU = [
+        {
+            icon: <ViewProfileIcon />,
+            title: 'View profile',
+        },
+        {
+            icon: <CartIcon />,
+            title: 'My order',
+        },
+        {
+            icon: <LogoutIcon />,
+            title: 'Logout',
+            separate: true,
+        },
+    ];
+
     return (
         <div className={cx('wrapper')}>
             <div className={cx('inner')}>
@@ -44,12 +67,49 @@ function Header() {
                             <NavLink to="/">FAQ</NavLink>
                         </div>
                     </div>
-                    <div className={cx('user')}>
-                        <FontAwesomeIcon className={cx('user-icon')} icon={faUser} />
-                        <div className={cx('login')}>
-                            <NavLink to="/login">Login</NavLink>
+                    {isAuth ? (
+                        <HeadlessTippy
+                            interactive
+                            // visible={true}
+                            delay={[0, 700]}
+                            offset={[16, 8]}
+                            render={(attrs) => (
+                                <div className={cx('user-extension')} tabIndex="-1" {...attrs}>
+                                    <div className={cx('arrow')}></div>
+                                    <PopperWrapper className={cx('popper-wrapper')}>
+                                        <div className={cx('menu-items')}>
+                                            {USER_MENU.map((item, index) => (
+                                                <div key={index} className={cx('item', { separate: item.separate })}>
+                                                    <span className={cx('icon')}>{item.icon}</span>
+                                                    <div className={cx('item-title')}>
+                                                        <span>{item.title}</span>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </PopperWrapper>
+                                </div>
+                            )}
+                        >
+                            <div className={cx('user-container')}>
+                                <div className={cx('image-container')}>
+                                    <Image
+                                        className={cx('image')}
+                                        src={currentUser.data.avatar}
+                                        alt={currentUser.data.fullName}
+                                    />
+                                </div>
+                                <div className={cx('name')}>{currentUser.data.fullName}</div>
+                            </div>
+                        </HeadlessTippy>
+                    ) : (
+                        <div className={cx('login-container')}>
+                            {/* <FontAwesomeIcon className={cx('user-icon')} icon={faUser} /> */}
+                            <div className={cx('login')}>
+                                <NavLink to="/login">Login</NavLink>
+                            </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             </div>
         </div>
