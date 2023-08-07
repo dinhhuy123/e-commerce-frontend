@@ -1,19 +1,28 @@
 .wrapper {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background: #f5f5f7;
 }
 
 .sign-up-title {
-    font-size: 2.8rem;
-    font-weight: 700;
+    min-height: 60px;
     text-align: center;
-    margin-bottom: 3.2rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 3.4rem;
+        margin: 23px 0;
+    }
+}
+
+.from-sign-in {
+    margin: 6rem 0 12rem 0;
 }
 
 .container {
@@ -34,7 +43,7 @@
 .title {
     font-size: 1.4rem;
     font-weight: 500;
-    color: #374151;
+    color: #777777;
     line-height: 2rem;
 }
 
@@ -88,14 +97,6 @@
     margin-right: 0.8rem;
 }
 
-.forgot-password {
-    a {
-        font-size: 1.4rem;
-        font-weight: 500;
-        color: #9681eb;
-    }
-}
-
 .button-container {
     margin-top: 2.4rem;
 }
@@ -126,7 +127,7 @@
     }
     .link {
         font-size: 1.4rem;
-        color: #9681eb;
+        color: var(--header-color);
         font-weight: 500;
         padding-left: 0.8rem;
     }

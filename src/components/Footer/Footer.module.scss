@@ -1,0 +1,122 @@
+.wrapper {
+    background-color: var(--footer-color);
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 1710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    padding: 6.5rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu {
+    width: 20%;
+}
+
+.menu-title {
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    color: var(--header-text-color);
+    padding-bottom: 20px;
+}
+
+.menu-content {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    li {
+        a,
+        span {
+            display: inline-block;
+            color: #fff;
+            padding-bottom: 1.3rem;
+            font-size: 1.3rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            line-height: 25px;
+        }
+    }
+    .email-link {
+        display: inline-block;
+        color: #fff;
+        padding-bottom: 1.3rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        line-height: 25px;
+    }
+}
+
+.icons-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    li {
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 0.5rem;
+        a {
+            align-items: center;
+            display: flex;
+            padding: 1.3rem;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+
+.preferential {
+    display: inline-block;
+    color: #fff;
+    padding-bottom: 1.3rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+
+.images-container {
+    li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.payments {
+    padding: 1.6rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.year {
+    display: flex;
+    align-items: center;
+    span {
+        font-weight: 400;
+        padding: 7px 0;
+        color: #fff;
+        font-size: 14px;
+    }
+}
+
+.payment-icon-container {
+    display: flex;
+    flex-direction: row;
+    li {
+        align-items: center;
+        display: flex;
+        padding: 0.5rem;
+    }
+}

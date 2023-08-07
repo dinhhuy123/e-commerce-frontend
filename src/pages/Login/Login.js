@@ -44,59 +44,57 @@ function Login() {
             <div className={cx('login-title')}>
                 <span>Login to your account</span>
             </div>
-            <PopperWrapper className={cx('container')}>
-                <form className={cx('inner')} onSubmit={(e) => e.preventDefault()}>
-                    <div className={cx('email-container')}>
-                        <div className={cx('title')}>
-                            <span>Email address</span>
+            <div className={cx('form-login')}>
+                <PopperWrapper className={cx('container')}>
+                    <form className={cx('inner')} onSubmit={(e) => e.preventDefault()}>
+                        <div className={cx('email-container')}>
+                            <div className={cx('title')}>
+                                <span>Email address</span>
+                            </div>
+                            <div className={cx('input-container')}>
+                                <input
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    className={cx('input-box')}
+                                    type="text"
+                                />
+                            </div>
                         </div>
-                        <div className={cx('input-container')}>
-                            <input
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                className={cx('input-box')}
-                                type="text"
-                            />
+                        <div className={cx('password-container')}>
+                            <div className={cx('title')}>
+                                <span>Password</span>
+                            </div>
+                            <div className={cx('input-container')}>
+                                <input
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    className={cx('input-box')}
+                                    type="password"
+                                />
+                            </div>
+                            <FontAwesomeIcon className={cx('show-password-icon')} icon={faEye} />
                         </div>
-                    </div>
-                    <div className={cx('password-container')}>
-                        <div className={cx('title')}>
-                            <span>Password</span>
+                        <div className={cx('items')}>
+                            <div className={cx('forgot-password')}>
+                                <NavLink className={cx('link')} href="/">
+                                    Forgot your password?
+                                </NavLink>
+                            </div>
                         </div>
-                        <div className={cx('input-container')}>
-                            <input
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                className={cx('input-box')}
-                                type="password"
-                            />
+                        <div className={cx('button-container')}>
+                            <button className={cx('submit-btn')} onClick={handleSubmit}>
+                                Submit
+                            </button>
                         </div>
-                        <FontAwesomeIcon className={cx('show-password-icon')} icon={faEye} />
-                    </div>
-                    <div className={cx('items')}>
-                        <div className={cx('remember')}>
-                            <input type="checkbox" className={cx('checkbox')} />
-                            <span>Remember me</span>
-                        </div>
-                        <div className={cx('forgot-password')}>
-                            <NavLink className={cx('link')} href="/">
-                                Forgot your password?
+                        <div className={cx('sign-up-link')}>
+                            <span>Not have any account?</span>
+                            <NavLink className={cx('link')} to="/sign-up">
+                                Sign up
                             </NavLink>
                         </div>
-                    </div>
-                    <div className={cx('button-container')}>
-                        <button className={cx('submit-btn')} onClick={handleSubmit}>
-                            Submit
-                        </button>
-                    </div>
-                    <div className={cx('sign-up-link')}>
-                        <span>Not have any account?</span>
-                        <NavLink className={cx('link')} to="/sign-up">
-                            Sign up
-                        </NavLink>
-                    </div>
-                </form>
-            </PopperWrapper>
+                    </form>
+                </PopperWrapper>
+            </div>
         </div>
     );
 }

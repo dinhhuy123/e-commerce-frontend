@@ -9,8 +9,8 @@ function Search() {
     return (
         <div className={cx('container')}>
             <input className={cx('input-box')} placeholder="Search Product" type="text" />
-            <button className={cx('search-icon')}>
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
+            <button className={cx('search-btn')}>
+                <FontAwesomeIcon className={cx('search-icon')} icon={faMagnifyingGlass} />
             </button>
         </div>
     );
