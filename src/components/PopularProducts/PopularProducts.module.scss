@@ -1,0 +1,242 @@
+.wrapper {
+    background-color: #f5f5f7;
+    padding-top: 7rem;
+}
+
+.inner {
+    padding: 0 1.5rem;
+    max-width: 1710px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.large-title {
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+    color: var(--text-color);
+    position: relative;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    width: 16.6666666667%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    // margin-right: -2rem;
+    // width: 285px;
+}
+
+.popper {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.7rem 1rem;
+}
+
+.item-image {
+    width: 5rem;
+    height: 5rem;
+}
+
+.item-title {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    padding: 1.9rem 2rem;
+}
+
+.product-container {
+    width: 83.333333333333%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sale-off {
+    width: 20%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.sale-off-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.image-container {
+    width: 80%;
+    overflow: hidden;
+    margin: -1rem 0;
+}
+
+.images {
+    transition: all 0.25s ease 0s;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+.data {
+    width: calc((1710px - (15px * 2) + (10px * 2)) / 6);
+    padding: 0 1rem;
+    transition: all 0s ease 0s;
+}
+
+.data-popper {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    position: relative;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 10px;
+    min-height: 156px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.name {
+    color: #bf4800;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    margin: 0 0 12px;
+    opacity: 1;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+    position: relative;
+    margin: 0 0 14px;
+    a {
+        width: 210px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+    }
+}
+
+.rating {
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: 0.3px;
+    line-height: 2rem;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+.sale-price {
+    color: red;
+}
+
+.sale-off-label {
+    position: absolute;
+    top: 1rem;
+    left: 1.2rem;
+    background-color: #febd69;
+    border-radius: 99999px;
+    padding: 0.5rem 0.8rem;
+}
+
+.label {
+    font-size: 1.3rem;
+}
+
+.like-button {
+    position: absolute;
+    right: 8px;
+    top: 15px;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 0 0px 3px 0;
+    z-index: 1;
+    display: block;
+    border-radius: 25px;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.like-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.button-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.prev-btn,
+.next-btn {
+    background: transparent;
+    cursor: pointer;
+    &:hover {
+        .prev-icon,
+        .next-icon {
+            color: var(--text-color);
+        }
+    }
+}
+
+.prev-icon,
+.next-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    color: #777777;
+}
+
+.next-icon {
+    margin-left: 1rem;
+}

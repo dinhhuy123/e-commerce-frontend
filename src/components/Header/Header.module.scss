@@ -182,7 +182,8 @@
 .mega-menu {
     position: absolute;
     width: 290px;
-    bottom: -15px;
+    top: 130px;
+    z-index: 100;
 }
 
 .cat-list {
